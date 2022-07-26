@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "KaKaoBank.app"
-               BlueprintName = "KaKaoBank"
-               ReferencedContainer = "container:KaKaoBank.xcodeproj">
+               BuildableName = "KakaoBank.app"
+               BlueprintName = "KakaoBank"
+               ReferencedContainer = "container:KakaoBank.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "KaKaoBankTests.xctest"
-               BlueprintName = "KaKaoBankTests"
-               ReferencedContainer = "container:KaKaoBank.xcodeproj">
+               BuildableName = "KakaoBankTests.xctest"
+               BlueprintName = "KakaoBankTests"
+               ReferencedContainer = "container:KakaoBank.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "KaKaoBank.app"
-            BlueprintName = "KaKaoBank"
-            ReferencedContainer = "container:KaKaoBank.xcodeproj">
+            BuildableName = "KakaoBank.app"
+            BlueprintName = "KakaoBank"
+            ReferencedContainer = "container:KakaoBank.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "KaKaoBank.app"
-            BlueprintName = "KaKaoBank"
-            ReferencedContainer = "container:KaKaoBank.xcodeproj">
+            BuildableName = "KakaoBank.app"
+            BlueprintName = "KakaoBank"
+            ReferencedContainer = "container:KakaoBank.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
