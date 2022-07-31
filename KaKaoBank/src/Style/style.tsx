@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, YellowBox} from 'react-native';
 
 const style = StyleSheet.create({
   spash_style: {
@@ -10,6 +10,9 @@ const style = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  splash_theme_color: {
+    backgroundColor: 'yellow',
   },
 });
 
