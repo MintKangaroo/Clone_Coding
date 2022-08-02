@@ -2,6 +2,6 @@ import {StyleSheet} from 'react-native';
 
 export const color = StyleSheet.create({
   main_page_back: {
-    backgroundColor: '#000080',
+    backgroundColor: '#5C6B92',
   },
 });
