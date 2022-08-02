@@ -1,9 +1,11 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
+import {color} from '../Style/color';
+
 export default ({navigation}: any) => {
   return (
-    <View style={{flex: 1}}>
+    <View style={{...color.main_page_back, flex: 1}}>
       <View
         style={{
           marginTop: 10,
