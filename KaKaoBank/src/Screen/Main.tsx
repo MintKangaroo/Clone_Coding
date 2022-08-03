@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 
 import {color} from '../Style/color';
+import {TextData} from '../Data/DataFile';
 
 const num = 100;
 
@@ -25,7 +26,7 @@ export default ({navigation}: any) => {
             justifyContent: 'space-between',
           }}>
           <View style={{flexDirection: 'row', alignItems: 'center'}}>
-            <Text style={main_page.top_text}>지창</Text>
+            <Text style={main_page.top_text}>{TextData.UserData.name}</Text>
             <TouchableOpacity style={main_page.my_account}>
               <Text style={{color: '#BDBDBD'}}>내 계좌</Text>
             </TouchableOpacity>
