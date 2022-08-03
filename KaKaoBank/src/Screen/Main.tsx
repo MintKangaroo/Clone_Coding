@@ -71,7 +71,7 @@ export default ({navigation}: any) => {
           <View
             style={{
               flex: 15,
-              backgroundColor: 'skyblue',
+              backgroundColor: '#A9F5F2',
               borderRadius: 10,
               marginTop: 10,
             }}>
@@ -86,7 +86,7 @@ export default ({navigation}: any) => {
           <View
             style={{
               flex: 15,
-              backgroundColor: 'skyblue',
+              backgroundColor: '#A9F5F2',
               borderRadius: 10,
               marginTop: 10,
             }}>
@@ -106,7 +106,7 @@ export default ({navigation}: any) => {
           <View
             style={{
               flex: 15,
-              backgroundColor: 'skyblue',
+              backgroundColor: '#819FF7',
               borderRadius: 10,
               marginTop: 10,
             }}>
@@ -119,7 +119,7 @@ export default ({navigation}: any) => {
           <View
             style={{
               flex: 15,
-              backgroundColor: 'skyblue',
+              backgroundColor: '#C97777',
               borderRadius: 10,
               marginTop: 10,
             }}>
