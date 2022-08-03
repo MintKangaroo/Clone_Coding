@@ -49,30 +49,83 @@ export default ({navigation}: any) => {
                 backgroundColor: 'white',
                 borderRadius: 15,
               }}
+              showsHorizontalScrollIndicator={false}
               horizontal={true}>
               {/*TODO: 스크롤뷰 구현*/}
+              <View style={{flexDirection: 'column', justifyContent: 'center'}}>
+                <Text>
+                  눙라ㅓㅜ아ㅓ루ㅏ너우라ㅓㅜㅇ라ㅓㅜ나ㅓ우라ㅓㅜㄴ아ㄴㅇㄹ나ㅣ으리ㅏㅡㄴ아ㅡ리느아릐으리ㅏ능리ㅏ
+                </Text>
+              </View>
             </ScrollView>
           </View>
 
           <View style={{flex: 1}} />
         </View>
-        <View style={{flex: 4, flexDirection: 'row'}}>
+        <View
+          style={{
+            flex: 4,
+            flexDirection: 'row',
+          }}>
           <View style={{flex: 1}} />
-          <View style={{flex: 15}}>
+          <View
+            style={{
+              flex: 15,
+              backgroundColor: 'skyblue',
+              borderRadius: 10,
+              marginTop: 10,
+            }}>
             <View>
               <Text>지창이의 큰 통장</Text>
             </View>
           </View>
           <View style={{flex: 1}} />
         </View>
-        <View style={{flex: 1}}>
-          <Text>저금통</Text>
+        <View style={{flex: 1, flexDirection: 'row'}}>
+          <View style={{flex: 1}}></View>
+          <View
+            style={{
+              flex: 15,
+              backgroundColor: 'skyblue',
+              borderRadius: 10,
+              marginTop: 10,
+            }}>
+            <View
+              style={{
+                flex: 1,
+                flexDirection: 'column',
+                justifyContent: 'center',
+              }}>
+              <Text style={{fontSize: 15}}>저금통</Text>
+            </View>
+          </View>
+          <View style={{flex: 1}}></View>
         </View>
-        <View style={{flex: 3}}>
-          <Text>오소리 앱개발 동아리 충학</Text>
+        <View style={{flex: 3, flexDirection: 'row'}}>
+          <View style={{flex: 1}}></View>
+          <View
+            style={{
+              flex: 15,
+              backgroundColor: 'skyblue',
+              borderRadius: 10,
+              marginTop: 10,
+            }}>
+            <Text>오소리 앱개발동아리 충학</Text>
+          </View>
+          <View style={{flex: 1}}></View>
         </View>
-        <View style={{flex: 3}}>
-          <Text>2022블레이드러너모임통장</Text>
+        <View style={{flex: 3, flexDirection: 'row'}}>
+          <View style={{flex: 1}}></View>
+          <View
+            style={{
+              flex: 15,
+              backgroundColor: 'skyblue',
+              borderRadius: 10,
+              marginTop: 10,
+            }}>
+            <Text>2022블레이드러너모임통장</Text>
+          </View>
+          <View style={{flex: 1}}></View>
         </View>
       </View>
     </SafeAreaView>

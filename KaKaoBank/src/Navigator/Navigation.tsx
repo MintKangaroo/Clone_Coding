@@ -3,6 +3,7 @@ import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import RNBootSplash from 'react-native-bootsplash';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import Main from '../Screen/Main';
 import Setting from '../Screen/Setting';
@@ -20,7 +21,8 @@ export default () => {
           component={Main}
           options={{
             headerShown: false,
-            tabBarLabel: '메인',
+            tabBarLabel: '',
+            tabBarIcon: () => <Icon name="home" color={'black'} size={25} />,
             //TODO: Icon 넣기
           }}
         />
@@ -29,7 +31,7 @@ export default () => {
           component={Menu}
           options={{
             headerShown: false,
-            tabBarLabel: '메뉴',
+            tabBarLabel: '',
             //TODO: Icon 넣기
           }}
         />
@@ -38,7 +40,7 @@ export default () => {
           component={Notification}
           options={{
             headerShown: false,
-            tabBarLabel: '알림',
+            tabBarLabel: '',
             //TODO: Icon 넣기
           }}
         />
@@ -47,7 +49,7 @@ export default () => {
           component={Setting}
           options={{
             headerShown: false,
-            tabBarLabel: '설정',
+            tabBarLabel: '',
             //TODO: Icon 넣기
           }}
         />
