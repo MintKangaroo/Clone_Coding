@@ -3,7 +3,7 @@ import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import RNBootSplash from 'react-native-bootsplash';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import Main from '../Screen/Main';
 import Setting from '../Screen/Setting';
@@ -22,8 +22,7 @@ export default () => {
           options={{
             headerShown: false,
             tabBarLabel: '',
-            tabBarIcon: () => <Icon name="home" color={'black'} size={25} />,
-            //TODO: Icon 넣기
+            tabBarIcon: () => <Icon name="person" color={'grey'} size={25} />,
           }}
         />
         <Tab.Screen
@@ -32,7 +31,8 @@ export default () => {
           options={{
             headerShown: false,
             tabBarLabel: '',
-            //TODO: Icon 넣기
+
+            tabBarIcon: () => <Icon name="grid" color={'grey'} size={25} />,
           }}
         />
         <Tab.Screen
@@ -41,7 +41,10 @@ export default () => {
           options={{
             headerShown: false,
             tabBarLabel: '',
-            //TODO: Icon 넣기
+
+            tabBarIcon: () => (
+              <Icon name="notifications" color={'grey'} size={25} />
+            ),
           }}
         />
         <Tab.Screen
@@ -50,7 +53,10 @@ export default () => {
           options={{
             headerShown: false,
             tabBarLabel: '',
-            //TODO: Icon 넣기
+
+            tabBarIcon: () => (
+              <Icon name="ellipsis-horizontal" color={'grey'} size={25} />
+            ),
           }}
         />
         {/*TODO: 새로운 Screen 추가될 때 여기에 Route 입력*/}
