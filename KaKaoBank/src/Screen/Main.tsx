@@ -9,6 +9,9 @@ import {
 } from 'react-native';
 
 import {color} from '../Style/color';
+{
+  /*데이터 불러오는 파일 import*/
+}
 import {TextData} from '../Data/DataFile';
 
 const num = 100;
@@ -77,7 +80,7 @@ export default ({navigation}: any) => {
               marginTop: 10,
             }}>
             <View>
-              <Text>지창이의 큰 통장</Text>
+              <Text>{TextData.Account[1]}</Text>
             </View>
           </View>
           <View style={{flex: 1}} />
@@ -97,7 +100,7 @@ export default ({navigation}: any) => {
                 flexDirection: 'column',
                 justifyContent: 'center',
               }}>
-              <Text style={{fontSize: 15}}>저금통</Text>
+              <Text style={{fontSize: 15}}>{TextData.Account[2]}</Text>
             </View>
           </View>
           <View style={{flex: 1}}></View>
@@ -111,7 +114,7 @@ export default ({navigation}: any) => {
               borderRadius: 10,
               marginTop: 10,
             }}>
-            <Text>오소리 앱개발동아리 충학</Text>
+            <Text>{TextData.Account[3]}</Text>
           </View>
           <View style={{flex: 1}}></View>
         </View>
@@ -124,7 +127,7 @@ export default ({navigation}: any) => {
               borderRadius: 10,
               marginTop: 10,
             }}>
-            <Text>2022블레이드러너모임통장</Text>
+            <Text>{TextData.Account[4]}</Text>
           </View>
           <View style={{flex: 1}}></View>
         </View>
