@@ -7,12 +7,11 @@ import {
   ScrollView,
   SafeAreaView,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import {color} from '../Style/color';
-{
-  /*데이터 불러오는 파일 import*/
-}
 import {TextData} from '../Data/DataFile';
+import {AdPage} from './AdPage';
 
 const num = 100;
 
@@ -35,8 +34,9 @@ export default ({navigation}: any) => {
             </TouchableOpacity>
           </View>
           <View>
-            <TouchableOpacity
-              style={main_page.profile_custom}></TouchableOpacity>
+            <TouchableOpacity style={main_page.profile_custom}>
+              <Icon name="person-circle" size={38}></Icon>
+            </TouchableOpacity>
           </View>
         </View>
         <View
@@ -48,20 +48,7 @@ export default ({navigation}: any) => {
           }}>
           <View style={{flex: 1}} />
           <View style={{flex: 15}}>
-            <ScrollView
-              style={{
-                backgroundColor: 'white',
-                borderRadius: 15,
-              }}
-              showsHorizontalScrollIndicator={false}
-              horizontal={true}>
-              {/*TODO: 스크롤뷰 구현*/}
-              <View style={{flexDirection: 'column', justifyContent: 'center'}}>
-                <Text>
-                  눙라ㅓㅜ아ㅓ루ㅏ너우라ㅓㅜㅇ라ㅓㅜ나ㅓ우라ㅓㅜㄴ아ㄴㅇㄹ나ㅣ으리ㅏㅡㄴ아ㅡ리느아릐으리ㅏ능리ㅏ
-                </Text>
-              </View>
-            </ScrollView>
+            <AdPage />
           </View>
 
           <View style={{flex: 1}} />
