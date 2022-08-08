@@ -1,10 +1,10 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-export default ({navigation}: any) => {
+export default function ({ navigation }: any) {
   return (
     <View>
       <Text>Menu</Text>
     </View>
   );
-};
+}

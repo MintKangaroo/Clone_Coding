@@ -1,10 +1,10 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 
-export default ({navigation}: any) => {
+export default function ({ navigation }: any) {
   return (
     <View>
       <Text>Setting</Text>
     </View>
   );
-};
+}

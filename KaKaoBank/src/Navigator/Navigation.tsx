@@ -1,8 +1,8 @@
 import React from 'react';
 import 'react-native-gesture-handler';
-import {NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import RNBootSplash from 'react-native-bootsplash';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import Main from '../Screen/Main';
@@ -12,23 +12,24 @@ import Notification from '../Screen/Notification';
 
 const Tab = createBottomTabNavigator();
 
-export default () => {
+export default function () {
   return (
     <NavigationContainer onReady={() => RNBootSplash.hide()}>
       <Tab.Navigator
         initialRouteName="Main"
-        screenOptions={{tabBarShowLabel: false, tabBarStyle: {height: 80}}}>
+        screenOptions={{ tabBarShowLabel: false, tabBarStyle: { height: 80 } }}
+      >
         <Tab.Screen
           name="Main"
           component={Main}
           options={{
             headerShown: false,
             tabBarLabel: '',
-            tabBarIcon: ({focused}) =>
+            tabBarIcon: ({ focused }) =>
               focused ? (
-                <Icon name="person" color={'black'} size={25} />
+                <Icon name="person" color="black" size={25} />
               ) : (
-                <Icon name="person" color={'grey'} size={25} />
+                <Icon name="person" color="grey" size={25} />
               ),
           }}
         />
@@ -38,11 +39,11 @@ export default () => {
           options={{
             headerShown: false,
             tabBarLabel: '',
-            tabBarIcon: ({focused}) =>
+            tabBarIcon: ({ focused }) =>
               focused ? (
-                <Icon name="grid" color={'black'} size={25} />
+                <Icon name="grid" color="black" size={25} />
               ) : (
-                <Icon name="grid" color={'grey'} size={25} />
+                <Icon name="grid" color="grey" size={25} />
               ),
           }}
         />
@@ -52,11 +53,11 @@ export default () => {
           options={{
             headerShown: false,
             tabBarLabel: '',
-            tabBarIcon: ({focused}) =>
+            tabBarIcon: ({ focused }) =>
               focused ? (
-                <Icon name="notifications" color={'black'} size={25} />
+                <Icon name="notifications" color="black" size={25} />
               ) : (
-                <Icon name="notifications" color={'grey'} size={25} />
+                <Icon name="notifications" color="grey" size={25} />
               ),
           }}
         />
@@ -66,16 +67,16 @@ export default () => {
           options={{
             headerShown: false,
             tabBarLabel: '',
-            tabBarIcon: ({focused}) =>
+            tabBarIcon: ({ focused }) =>
               focused ? (
-                <Icon name="ellipsis-horizontal" color={'black'} size={25} />
+                <Icon name="ellipsis-horizontal" color="black" size={25} />
               ) : (
-                <Icon name="ellipsis-horizontal" color={'grey'} size={25} />
+                <Icon name="ellipsis-horizontal" color="grey" size={25} />
               ),
           }}
         />
-        {/*TODO: 새로운 Screen 추가될 때 여기에 Route 입력*/}
+        {/* TODO: 새로운 Screen 추가될 때 여기에 Route 입력 */}
       </Tab.Navigator>
     </NavigationContainer>
   );
-};
+}

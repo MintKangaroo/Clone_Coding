@@ -1,4 +1,4 @@
-import {StyleSheet, YellowBox} from 'react-native';
+import { StyleSheet, YellowBox } from 'react-native';
 
 const style = StyleSheet.create({
   spash_style: {

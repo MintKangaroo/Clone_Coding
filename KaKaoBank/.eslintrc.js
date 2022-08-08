@@ -1,16 +1,28 @@
 module.exports = {
-  root: true,
-  extends: '@react-native-community',
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
-  overrides: [
-    {
-      files: ['*.ts', '*.tsx'],
-      rules: {
-        '@typescript-eslint/no-shadow': ['error'],
-        'no-shadow': 'off',
-        'no-undef': 'off',
-      },
-    },
+  extends: [
+    'airbnb',
+    'prettier',
+    'prettier/react',
+    'plugin:prettier/recommended',
+    'eslint-config-prettier',
   ],
+  parser: 'babel-eslint',
+  rules: {
+    'import/no-unresolved': 'off',
+    'react/jsx-filename-extension': [
+      1,
+      {
+        extensions: ['.js', '.jsx'],
+      },
+    ],
+    'prettier/prettier': [
+      'error',
+      {
+        trailingComma: 'es5',
+        singleQuote: true,
+        printWidth: 100,
+      },
+    ],
+  },
+  plugins: ['prettier'],
 };
