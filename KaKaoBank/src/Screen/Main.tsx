@@ -18,7 +18,7 @@ import { AdPage } from './AdPage';
 import { Dimensions } from 'react-native';
 
 const Screen_Height = Dimensions.get('window').height;
-const Screen_chartWidth = Dimensions.get('window').width;
+const Screen_Width = Dimensions.get('window').width;
 
 const num = 100;
 
@@ -44,7 +44,7 @@ export default function ({ navigation }: any) {
             </TouchableOpacity>
           </View>
           <View>
-            <TouchableOpacity style={{ marginTop: 10 }}>
+            <TouchableOpacity style={{ marginTop: 10, marginRight: 20 }}>
               <Icon name="person-circle" size={45} />
             </TouchableOpacity>
           </View>
@@ -106,9 +106,13 @@ export default function ({ navigation }: any) {
                   }}
                 >
                   <View />
-                  <Text style={{ fontWeight: '500' }}>이체</Text>
+                  <TouchableOpacity>
+                    <Text style={{ fontWeight: '500' }}>이체</Text>
+                  </TouchableOpacity>
                   <Text style={{ color: 'grey', opacity: 0.3 }}>ㅣ</Text>
-                  <Text style={{ fontWeight: '500' }}>카드이용내역</Text>
+                  <TouchableOpacity>
+                    <Text style={{ fontWeight: '500' }}>카드이용내역</Text>
+                  </TouchableOpacity>
                   <View />
                 </View>
               </View>
@@ -152,9 +156,18 @@ export default function ({ navigation }: any) {
             >
               <View style={{ marginTop: 20, marginLeft: 20 }}>
                 <Text style={{ fontWeight: '500' }}>{TextData.Account[3]}</Text>
-                <Text style={{ fontSize: 13, fontWeight: '400' }}>
+                <Text style={{ fontSize: 12, fontWeight: '300' }}>
                   {TextData.Account_Num[3]}
                 </Text>
+                <View
+                  style={{ justifyContent: 'flex-end', flexDirection: 'row' }}
+                >
+                  <Text
+                    style={{ fontSize: 20, fontWeight: '600', marginRight: 10 }}
+                  >
+                    {TextData.Rest_Money[3]}원
+                  </Text>
+                </View>
               </View>
             </View>
             <View style={{ flex: 1 }} />
@@ -170,10 +183,21 @@ export default function ({ navigation }: any) {
               }}
             >
               <View style={{ marginTop: 20, marginLeft: 20 }}>
-                <Text style={{ fontWeight: '500' }}>{TextData.Account[4]}</Text>
-                <Text style={{ fontSize: 13, fontWeight: '400' }}>
+                <Text style={{ fontWeight: '500', color: 'white' }}>
+                  {TextData.Account[4]}
+                </Text>
+                <Text style={{ fontSize: 12, fontWeight: '300' }}>
                   {TextData.Account_Num[4]}
                 </Text>
+                <View
+                  style={{ justifyContent: 'flex-end', flexDirection: 'row' }}
+                >
+                  <Text
+                    style={{ fontSize: 20, fontWeight: '600', marginRight: 10 }}
+                  >
+                    {TextData.Rest_Money[4]}원
+                  </Text>
+                </View>
               </View>
             </View>
             <View style={{ flex: 1 }} />
@@ -187,9 +211,10 @@ export default function ({ navigation }: any) {
 const main_page = StyleSheet.create({
   top_text: {
     color: 'white',
-    fontSize: 25,
+    fontSize: 22,
+    fontWeight: '700',
     marginRight: 10,
-    marginLeft: 10,
+    marginLeft: 20,
   },
   my_account: {
     width: 55,

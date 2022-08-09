@@ -16,7 +16,7 @@ export default function () {
   return (
     <NavigationContainer onReady={() => RNBootSplash.hide()}>
       <Tab.Navigator
-        initialRouteName="Main"
+        initialRouteName="Menu"
         screenOptions={{ tabBarShowLabel: false, tabBarStyle: { height: 80 } }}
       >
         <Tab.Screen

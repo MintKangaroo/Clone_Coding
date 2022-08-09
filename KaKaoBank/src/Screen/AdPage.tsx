@@ -1,6 +1,13 @@
 import React from 'react';
 import { View, FlatList, Text } from 'react-native';
 
+//스크린의 가로 세로 크기 구하는 식
+
+import { Dimensions } from 'react-native';
+
+const Screen_Height = Dimensions.get('window').height;
+const Screen_Width = Dimensions.get('window').width;
+
 const Data_list = [
   { id: '1', data: '라이언' },
   { id: '2', data: '호랑이' },
@@ -9,7 +16,7 @@ const Data_list = [
 
 const Scroll_Data = ({ item }: any) => {
   return (
-    <View style={{ width: 450 }}>
+    <View style={{ width: Screen_Width * 0.835 }}>
       <Text style={{ fontWeight: '500' }}>{item.data}</Text>
     </View>
   );
